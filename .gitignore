@@ -5,6 +5,7 @@ site
 src
 gen_md_from_src.py
 Main_Gen_Pcode.m
-Main_Run.sh
+Main_Run.bat
+git.sh
 mkdocs.yml
 *.asv
