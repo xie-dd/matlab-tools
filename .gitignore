@@ -1,3 +1,10 @@
+.git
+docs
+env
+site
 src
+gen_md_from_src.py
 Main_Gen_Pcode.m
+Main_Run.sh
+mkdocs.yml
 *.asv
