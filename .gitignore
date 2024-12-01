@@ -1,7 +1,6 @@
 .git
-docs
 env
-site
+mkdocs
 src
 gen_md_from_src.py
 Main_Gen_Pcode.m
