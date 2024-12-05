@@ -11,8 +11,10 @@
       
       
       
-        <link rel="prev" href="Read_OP4_Ascii.html">
+        <link rel="prev" href="index.html">
       
+      
+        <link rel="next" href="Read_OP4_Ascii.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -20,7 +22,7 @@
     
     
       
-        <title>Read_OP4_Binary - matlab-tools</title>
+        <title>Read_KM_From_Optistruct_Fast - matlab-tools</title>
       
     
     
@@ -108,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Read_OP4_Binary
+              Read_KM_From_Optistruct_Fast
             
           </span>
         </div>
@@ -242,46 +244,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Read_KM_From_Optistruct_Fast.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Read_KM_From_Optistruct_Fast
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Read_OP4_Ascii.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Read_OP4_Ascii
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -296,18 +258,18 @@
           
   
   <span class="md-ellipsis">
-    Read_OP4_Binary
+    Read_KM_From_Optistruct_Fast
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="Read_OP4_Binary.html" class="md-nav__link md-nav__link--active">
+      <a href="Read_KM_From_Optistruct_Fast.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Read_OP4_Binary
+    Read_KM_From_Optistruct_Fast
   </span>
   
 
@@ -354,9 +316,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
+  <a href="#input_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Output
+      Input
     </span>
   </a>
   
@@ -371,19 +333,50 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      See Also
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Read_OP4_Ascii.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Read_OP4_Ascii
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Read_OP4_Binary.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Read_OP4_Binary
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -440,9 +433,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#output" class="md-nav__link">
+  <a href="#input_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Output
+      Input
     </span>
   </a>
   
@@ -452,15 +445,6 @@
   <a href="#note" class="md-nav__link">
     <span class="md-ellipsis">
       Note
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      See Also
     </span>
   </a>
   
@@ -484,31 +468,25 @@
   
 
 
-  <h1>Read_OP4_Binary</h1>
+  <h1>Read_KM_From_Optistruct_Fast</h1>
 
 <h2 id="description">Description</h2>
-<p>read the output4 file (binary) created by nastran</p>
+<p>Read the stiffness and mass matrix output by Optistruct</p>
 <h2 id="syntax">Syntax</h2>
-<pre><code>Matrix = Read_OP4_Binary(filName)
+<pre><code>Model = Read_KM_From_Optistruct_Fast(filName)
 </code></pre>
 <h2 id="input">Input</h2>
 <ul>
-<li>filName: output4 file name</li>
+<li>filName: the file path of .full.mat</li>
 </ul>
-<h2 id="output">Output</h2>
+<h2 id="input_1">Input</h2>
 <ul>
-<li>Matrix: the matrix of output4 include</li>
+<li>Model: a structure include K M</li>
 </ul>
 <h2 id="note">Note</h2>
-<ul>
-<li>output4 file must be binary format</li>
-<li>only first matrix in output4 file be read (if many matrix in file)</li>
-<li>IGMAT=FALSE is not supported</li>
-</ul>
-<h2 id="see-also">See Also</h2>
-<ul>
-<li><a href="Read_OP4_Ascii.html">Read_OP4_Ascii.m</a></li>
-</ul>
+<p>Ref: https://www.yuque.com/xdd1997/ek3kug/xmmw08php2yi79yr
+PWD: cawk
+update:2024-12-5</p>
 
 
 
